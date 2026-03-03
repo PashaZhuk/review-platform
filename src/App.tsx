@@ -3,6 +3,7 @@ import { Hero } from './components/Hero';
 import { Catalog } from './components/Catalog';
 import { Location } from './components/Location'; // Добавлен импорт карты
 import { ContactForm } from './components/ContactForm';
+import { Analytics } from "@vercel/analytics/react";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
       </main>
 
       {/* Компонент аналитики */}
-      
+      <Analytics />
 
       <footer className="bg-slate-900 py-12 text-center text-slate-500 text-sm">
         <div className="max-w-7xl mx-auto px-4">
